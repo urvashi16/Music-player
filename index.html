@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="./icons/css/all.min.css">
+    <title>Music App</title>
+</head>
+<body>
+      <div class="container">
+        <div class="navbar">
+            <img src="images/logo.png" class="logo" alt="Logo">
+          
+        </div>
+
+        <div class="content">
+            <div class="left-col">
+                <h1>Where words <br>fail, Music<br>speaks.</h1>
+            </div>
+            <div class="right-col">
+                              <!--MUSIC PLAYER CONTROLS-->
+                
+                <!--************************************************************************-->
+                    <div class="music-container">
+                        <div class="music-info">
+                            <h4 id="title">Indian Music</h4>
+                            <div class="progress-container">
+                                <div class="progress">
+
+                                </div>
+                            </div>
+                        </div>
+                          <audio id="audio">
+                                <source src="music/Dance.mp3" type="audio/mp3">
+                            </audio>
+
+                            <div class="img-container">
+                                <img src="images/Indian.jpg" alt="music-cover" id="cover" />
+
+                            </div>
+                            <div class="navigation">
+                                <button id="prev" class="skip-btn skip-back"><i class="fas fa-backward fa-2x"></i></button>
+                                <button id="play" class="play-btn"><i class="fas fa-play fa-2x"></i></button>
+                                <button id="next" class="skip-btn skip-next"><i class="fas fa-forward fa-2x"></i></button>
+                            </div>
+                    </div>
+                <!--************************************************************************-->
+                    
+                <div id="music-visualizer">
+                    <canvas id="canvas" width="300" height="200"></canvas>
+                </div>
+            
+            
+        </div>
+        </div>
+ 
+   </div>
+  <script src="script.js"></script>
+  
+</body>
+</html>
